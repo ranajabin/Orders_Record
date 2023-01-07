@@ -1,0 +1,65 @@
+/* Enter your custom styles here */
+.sapMTB-Transparent-CTX.sapMTB {
+    background-color: #bf4d4d;
+    color: rgb(192, 204, 30);
+}
+
+.sapMTitle {
+    font-weight: bold;
+    color: #1fdd2e;
+}
+
+.sapMTableTH {
+    background: #b8d2ed;
+    border-bottom: 4px solid #fdef27;
+    vertical-align: middle;
+}
+
+.sapMListInsetBG {
+    padding: 1rem;
+}
+
+.sapUiFormResLayout>.sapUiFormTitle {
+    box-sizing: border-box;
+    padding: 3rem;
+}
+
+.sapUiForm .sapUiFormTitle {
+    font-weight: bold;
+    font-size: 2rem;
+    border-width: 3px;
+    border-color: #abbda8;
+    color: #d516ac;
+    height: 6rem;
+    line-height: 3rem;
+}
+
+.sapMLabel {
+    color: #151ceb;
+    /* background-color: #aef0f0; */
+    font-size: 1.3rem;
+
+
+}
+
+.sapUiFormResLayout .sapUiRFLRow:first-child>.sapUiRFLContainer:first-child>.sapUiRFLContainerContent>.sapMLabel {
+    width: 60%;
+}
+
+.sapUiFormResLayout>div {
+    padding: 1.5rem;
+    box-sizing: border-box;
+    padding-bottom: 8rem;
+}
+
+html.sap-desktop:not(.sapUiNativeScrollbars) ::-webkit-scrollbar {
+    background-color: #bd90f7;
+}
+
+/* .sapUiForm .sapUiFormTitle {
+    border-width: 3px;
+    border-color: #abbda8;
+    font-family: "72-Bold","72-Boldfull","72","72full",Arial,Helvetica,sans-serif;
+    height: 2.75rem;
+    line-height: 2.75rem;
+} */

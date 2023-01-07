@@ -1,0 +1,81 @@
+<mvc:View controllerName="ordersproject.northwindordersproject.controller.View2" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout">
+    <Page id="page" title="Order Details Form" titleAlignment="Center" showNavButton="true" navButtonPress="onNavBack">
+        <content>
+            <f:SimpleForm title="Orders Record:" alignItems="Center">
+                <f:content>
+                    <core:Title text="" />
+                    <Label text="Order Id" />
+                    <Input value="{array2>/0/OrderID}" width="50%" />
+
+                    <Label text="Customer Id" />
+                    <Input value="{array2>/0/CustomerID}" width="50%" />
+
+                    <Label text="Employee Id" />
+                    <Input value="{array2>/0/EmployeeID}" width="50%" />
+
+                    <Label text="Order Date" />
+                    <Input value="{
+				path: 'array2>/0/OrderDate',
+				type: 'sap.ui.model.type.Date',
+				formatOptions: {
+					style: 'medium'
+				}
+			}" width="50%" />
+                    <!--			<Input value="{array2>/0/OrderDate}"/>  -->
+
+                    <Label text="Required Date" />
+                    <!--	<Input value="{array2>/0/RequiredDate}"/>  -->
+
+                    <Input value="{
+				path: 'array2>/0/RequiredDate',
+				type: 'sap.ui.model.type.Date',
+				formatOptions: {
+					style: 'medium'
+				}
+			}" width="50%" />
+
+                    <Label text="Shipped Date" />
+                    <!--		<Input value="{array2>/0/ShippedDate}"/>  -->
+                    <Input value="{
+				path: 'array2>/0/ShippedDate',
+				type: 'sap.ui.model.type.Date',
+				formatOptions: {
+					style: 'medium'
+				}
+			}" width="50%" />
+
+                    <Label text="Ship Via" />
+                    <Input value="{array2>/0/ShipVia}" width="50%" />
+                    <core:Title text="" />
+                    <Label text="Freight" />
+                    <Input value="{array2>/0/Freight}" width="50%" />
+
+                    <Label text="Ship Name" />
+                    <Input value="{array2>/0/ShipName}" width="50%" />
+
+                    <Label text="Ship Address" />
+                    <Input value="{array2>/0/ShipAddress}" width="50%" />
+
+                    <Label text="Ship City" />
+                    <Input value="{array2>/0/ShipCity}" width="50%" />
+
+                    <Label text="Ship Region" />
+                    <Input value="{array2>/0/ShipRegion}" width="50%" />
+
+                    <Label text="Ship Postal Code" />
+                    <Input value="{array2>/0/ShipPostalCode}" width="50%" />
+
+                    <Label text="Ship Country" />
+                    <Input value="{array2>/0/ShipCountry}" width="50%" />
+                </f:content>
+            </f:SimpleForm>
+        </content>
+        <footer>
+            <Bar design="Footer">
+                <contentRight>
+                    <Button text="Confirm your Order" press="onPress" type="Emphasized" />
+                </contentRight>
+            </Bar>
+        </footer>
+    </Page>
+</mvc:View>

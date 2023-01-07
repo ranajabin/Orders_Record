@@ -1,0 +1,103 @@
+<mvc:View controllerName="ordersproject.northwindordersproject.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+    <Page id="page" title="Orders Detail" titleAlignment="Center" backgroundDesign="Standard">
+        <content>
+            <FlexBox>
+                <Table id="Tab" headerText="Orders Table:-" inset="true" items="{model1>/results}" sticky="ColumnHeaders,HeaderToolbar" alternateRowColors="true">
+                    <headerToolbar>
+                        <Toolbar>
+                            <Title text="Orders Table:" />
+                            <ToolbarSpacer />
+                            <SearchField width="30%" search="onFilterSearch" />
+                        </Toolbar>
+                    </headerToolbar>
+                    <columns>
+                        <Column>
+                            <Text text="Order Id" />
+                        </Column>
+
+                        <Column>
+                            <Text text="Cusotomer Id" />
+                        </Column>
+
+                        <Column>
+                            <Text text="Employee Id" />
+                        </Column>
+
+                        <Column>
+                            <Text text="Order Date" />
+                        </Column>
+
+                        <Column>
+                            <Text text="Required Date" />
+                        </Column>
+
+                        <Column>
+                            <Text text="Shipped Date" />
+                        </Column>
+
+                        <Column>
+                            <Text text="Ship Via" />
+                        </Column>
+
+                        <Column>
+                            <Text text="Freight" />
+                        </Column>
+
+                        <Column>
+                            <Text text="Ship Name" />
+                        </Column>
+
+                        <Column>
+                            <Text text="Ship Address" />
+                        </Column>
+
+                        <Column>
+                            <Text text="Ship City" />
+                        </Column>
+
+                        <Column>
+                            <Text text="Ship Region" />
+                        </Column>
+
+                        <Column>
+                            <Text text="Ship Postal Code" />
+                        </Column>
+
+                        <Column>
+                            <Text text="Ship Country" />
+                        </Column>
+                    </columns>
+
+                    <items>
+                        <ColumnListItem type="Active" id="col1" press="onRowClick">
+                            <cells>
+                                <Text id="txt1" text="{model1>OrderID}" />
+                                <Text id="txt2" text="{model1>CustomerID}" />
+                                <Text id="txt3" text="{model1>EmployeeID}" />
+                                <Text text="{path: 'model1>OrderDate',type: 'sap.ui.model.type.Date',
+                                			formatOptions: {style: 'short'}}" />
+                                <!-- <Text id="txt4" text="{model1>OrderDate}" />  -->
+                                <Text text="{path: 'model1>RequiredDate',type: 'sap.ui.model.type.Date',
+                                			formatOptions: {style: 'short'}}" />
+                                <!-- <Text id="txt5" text="{model1>RequiredDate}" /> -->
+                                <Text text="{path: 'model1>RequiredDate',type: 'sap.ui.model.type.Date',
+                                			formatOptions: {style: 'short'}}" />
+                                <!-- <Text id="txt6" text="{model1>ShippedDate}" /> -->
+                                <Text text="{path: 'model1>ShippedDate',type: 'sap.ui.model.type.Date',
+                                			formatOptions: {style: 'short'}}" />
+                                <Text id="txt7" text="{model1>ShipVia}" />
+                                <Text id="txt8" text="{model1>Freight}" />
+                                <Text id="txt9" text="{model1>ShipName}" />
+                                <Text id="txt10" text="{model1>ShipAddress}" />
+                                <Text id="txt11" text="{model1>ShipCity}" />
+                                <Text id="txt12" text="{model1>ShipRegion}" />
+                                <Text id="txt13" text="{model1>ShipPostalCode}" />
+                                <Text id="txt14" text="{model1>ShipCountry}" />
+                            </cells>
+                        </ColumnListItem>
+                    </items>
+                </Table>
+            </FlexBox>
+        </content>
+    </Page>
+</mvc:View>
